@@ -2,8 +2,8 @@ import "./App.css";
 
 function App() {
   return (
-    <div className="min-h-screen bg-white text-gray-800 px-8 py-12 font-sans dark:bg-gray-900 dark:text-gray-200">
-      {/* Sidebar Menu (Fixed Left) */}
+    <div className="min-h-screen bg-white text-black dark:bg-neutral-900 dark:text-white transition-colors duration-300">
+      {/* 사이드바 */}
       <aside className="hidden md:block fixed left-0 top-0 h-full w-48 bg-gray-100 dark:bg-gray-800 p-4 shadow">
         <h2 className="text-lg font-bold mb-4">Louis</h2>
         <ul className="space-y-2 text-sm">
@@ -35,27 +35,28 @@ function App() {
         </ul>
       </aside>
 
-      {/* Main Content */}
-      <main className="ml-0 md:ml-52 max-w-4xl">
+      {/* 메인 콘텐츠 */}
+      <main className="ml-0 md:ml-52 max-w-4xl px-4">
         <header className="mb-12">
           <h1 className="text-3xl font-bold mb-2">👨‍💻 Louis | Game & Web Developer</h1>
           <p className="text-sm text-gray-500 dark:text-gray-400">Unity · C# · React · Spring Boot · Git</p>
         </header>
 
         {/* 개발 철학 */}
-        <section id="philosophy" className="mb-12">
+        <section id="philosophy" className="mb-16">
           <h2 className="text-xl font-semibold mb-2">💡 개발 철학</h2>
           <blockquote className="text-gray-700 dark:text-gray-300 italic border-l-4 pl-4 border-purple-400">
             “좋은 게임은 감정을 전달한다.” <br />
-            사용자가 따뜻한 경험을 할 수 있도록, <br />
+            사용자가 따뜻한 경험을 할 수 있도록,
+            <br />
             꾸준한 기록과 개발을 통해 성장하는 개발자가 되겠습니다.
           </blockquote>
         </section>
 
         {/* 소개 */}
-        <section id="about" className="mb-12">
+        <section id="about" className="mb-16">
           <h2 className="text-xl font-semibold mb-2">🌟 소개</h2>
-          <ul className="list-disc pl-5 text-gray-700 dark:text-gray-300 space-y-1">
+          <ul className="list-none pl-0 text-gray-300 space-y-1">
             <li>🎮 게임과 상상력을 좋아하는 개발자입니다</li>
             <li>🌍 글로벌 출시를 목표로 캐주얼 게임을 개발하고 있습니다</li>
             <li>💻 Unity + Web 풀스택을 병행하며 꾸준히 기록하고 성장 중입니다</li>
@@ -63,12 +64,12 @@ function App() {
         </section>
 
         {/* 기술 스택 */}
-        <section id="skills" className="mb-12">
-          <h2 className="text-xl font-semibold mb-4">🛠 기술 스택</h2>
+        <section id="skills" className="mb-16">
+          <h2 className="text-xl font-semibold mb-4 text-center">🛠 기술 스택</h2>
 
           <div className="mb-6">
             <h3 className="text-lg font-semibold mb-2">🎮 Game Development</h3>
-            <div className="flex flex-wrap gap-2">
+            <div className="flex flex-wrap justify-center gap-2">
               <img src="https://img.shields.io/badge/Unity-100000?style=for-the-badge&logo=unity&logoColor=white" />
               <img src="https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white" />
               <img src="https://img.shields.io/badge/Firebase-ffca28?style=for-the-badge&logo=firebase&logoColor=black" />
@@ -77,7 +78,7 @@ function App() {
 
           <div className="mb-6">
             <h3 className="text-lg font-semibold mb-2">🌐 Web Development</h3>
-            <div className="flex flex-wrap gap-2">
+            <div className="flex flex-wrap justify-center gap-2">
               <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" />
               <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" />
               <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" />
@@ -90,7 +91,7 @@ function App() {
 
           <div>
             <h3 className="text-lg font-semibold mb-2">🧰 Tools & Collaboration</h3>
-            <div className="flex flex-wrap gap-2">
+            <div className="flex flex-wrap justify-center gap-2">
               <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" />
               <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" />
               <img src="https://img.shields.io/badge/Notion-000000?style=for-the-badge&logo=notion&logoColor=white" />
@@ -99,34 +100,36 @@ function App() {
         </section>
 
         {/* 프로젝트 */}
-        <section id="projects" className="mb-12">
-          <h2 className="text-xl font-semibold mb-4">📁 프로젝트</h2>
-          <ul className="list-disc pl-5 text-gray-700 dark:text-gray-300 space-y-1">
-            <li>
-              <strong>WarmFriends</strong> – Unity 기반 Match-3 + 펫 수집 게임
-            </li>
-            <li>
-              <strong>운빨좇망겜 리메이크</strong> – 유닛 조합 전략 디펜스
-            </li>
-            <li>
-              <strong>깃허브 & 블로그</strong> – 기술 정리 및 포트폴리오 문서화
-            </li>
-          </ul>
-          <p className="mt-2">
-            🔗{" "}
-            <a
-              href="https://www.notion.so/1e5339be58d980ba90f5c397e02074b6?source=copy_link"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-purple-600 underline hover:text-purple-800"
-            >
-              Notion 포트폴리오 보기
-            </a>
-          </p>
+        <section id="projects" className="mb-16">
+          <h2 className="text-xl font-semibold mb-6">📁 프로젝트</h2>
+          <div className="grid gap-6 md:grid-cols-2">
+            <div className="bg-neutral-800 rounded-xl p-5 shadow hover:shadow-lg transition">
+              <h3 className="text-lg font-bold text-purple-400 mb-2">WarmFriends</h3>
+              <p className="text-gray-300 text-sm mb-3">Unity 기반 Match-3 + 펫 수집 게임</p>
+              <a
+                href="https://www.notion.so/1e5339be58d980ba90f5c397e02074b6?source=copy_link"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-sm text-purple-500 underline hover:text-purple-300"
+              >
+                🔗 프로젝트 보기
+              </a>
+            </div>
+
+            <div className="bg-neutral-800 rounded-xl p-5 shadow hover:shadow-lg transition">
+              <h3 className="text-lg font-bold text-purple-400 mb-2">운빨좇망겜 리메이크</h3>
+              <p className="text-gray-300 text-sm mb-3">유닛 조합 전략 디펜스</p>
+            </div>
+
+            <div className="bg-neutral-800 rounded-xl p-5 shadow hover:shadow-lg transition">
+              <h3 className="text-lg font-bold text-purple-400 mb-2">깃허브 & 블로그</h3>
+              <p className="text-gray-300 text-sm mb-3">기술 정리 및 포트폴리오 문서화</p>
+            </div>
+          </div>
         </section>
 
         {/* GitHub 활동 */}
-        <section id="github" className="mb-12">
+        <section id="github" className="mb-20">
           <h2 className="text-xl font-semibold mb-4">📊 GitHub 활동</h2>
           <div className="flex flex-col md:flex-row md:space-x-4">
             <img
