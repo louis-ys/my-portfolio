@@ -37,15 +37,15 @@ function App() {
 
       {/* 메인 콘텐츠 */}
       <main className="ml-0 md:ml-52 max-w-4xl px-4">
-        <header className="mb-12">
+        <header className="mb-12 text-left">
           <h1 className="text-3xl font-bold mb-2">👨‍💻 Louis | Game & Web Developer</h1>
           <p className="text-sm text-gray-500 dark:text-gray-400">Unity · C# · React · Spring Boot · Git</p>
         </header>
 
         {/* 개발 철학 */}
-        <section id="philosophy" className="mb-16">
+        <section id="philosophy" className="mb-16 text-left">
           <h2 className="text-xl font-semibold mb-2">💡 개발 철학</h2>
-          <blockquote className="text-gray-700 dark:text-gray-300 italic border-l-4 pl-4 border-purple-400">
+          <blockquote className="text-gray-300 italic pl-4">
             “좋은 게임은 감정을 전달한다.” <br />
             사용자가 따뜻한 경험을 할 수 있도록,
             <br />
@@ -54,7 +54,7 @@ function App() {
         </section>
 
         {/* 소개 */}
-        <section id="about" className="mb-16">
+        <section id="about" className="mb-16 text-left">
           <h2 className="text-xl font-semibold mb-2">🌟 소개</h2>
           <ul className="list-none pl-0 text-gray-300 space-y-1">
             <li>🎮 게임과 상상력을 좋아하는 개발자입니다</li>
@@ -68,8 +68,8 @@ function App() {
           <h2 className="text-xl font-semibold mb-4 text-center">🛠 기술 스택</h2>
 
           <div className="mb-6">
-            <h3 className="text-lg font-semibold mb-2">🎮 Game Development</h3>
-            <div className="flex flex-wrap justify-center gap-2">
+            <h3 className="text-lg font-semibold mb-2 text-center">🎮 Game Development</h3>
+            <div className="flex flex-wrap justify-center items-center gap-x-3 gap-y-2">
               <img src="https://img.shields.io/badge/Unity-100000?style=for-the-badge&logo=unity&logoColor=white" />
               <img src="https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white" />
               <img src="https://img.shields.io/badge/Firebase-ffca28?style=for-the-badge&logo=firebase&logoColor=black" />
@@ -77,8 +77,8 @@ function App() {
           </div>
 
           <div className="mb-6">
-            <h3 className="text-lg font-semibold mb-2">🌐 Web Development</h3>
-            <div className="flex flex-wrap justify-center gap-2">
+            <h3 className="text-lg font-semibold mb-2 text-center">🌐 Web Development</h3>
+            <div className="flex flex-wrap justify-center items-center gap-x-3 gap-y-2">
               <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" />
               <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" />
               <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" />
@@ -90,8 +90,8 @@ function App() {
           </div>
 
           <div>
-            <h3 className="text-lg font-semibold mb-2">🧰 Tools & Collaboration</h3>
-            <div className="flex flex-wrap justify-center gap-2">
+            <h3 className="text-lg font-semibold mb-2 text-center">🧰 Tools & Collaboration</h3>
+            <div className="flex flex-wrap justify-center items-center gap-x-3 gap-y-2">
               <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" />
               <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" />
               <img src="https://img.shields.io/badge/Notion-000000?style=for-the-badge&logo=notion&logoColor=white" />
@@ -100,7 +100,7 @@ function App() {
         </section>
 
         {/* 프로젝트 */}
-        <section id="projects" className="mb-16">
+        <section id="projects" className="mb-16 text-left">
           <h2 className="text-xl font-semibold mb-6">📁 프로젝트</h2>
           <div className="grid gap-6 md:grid-cols-2">
             <div className="bg-neutral-800 rounded-xl p-5 shadow hover:shadow-lg transition">
@@ -129,7 +129,7 @@ function App() {
         </section>
 
         {/* GitHub 활동 */}
-        <section id="github" className="mb-20">
+        <section id="github" className="mb-20 text-left">
           <h2 className="text-xl font-semibold mb-4">📊 GitHub 활동</h2>
           <div className="flex flex-col md:flex-row md:space-x-4">
             <img
