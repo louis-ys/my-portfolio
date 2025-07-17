@@ -42,7 +42,7 @@ function App() {
         {/* 상단 프로필 */}
         <header className="mb-12 text-center">
           <img
-            src="/images/profile.png"
+            src={`${import.meta.env.BASE_URL}images/profile.png`}
             alt="Profile"
             className="w-28 h-28 rounded-full mx-auto mb-4 border-4 border-white dark:border-gray-700 shadow"
           />
