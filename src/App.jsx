@@ -9,12 +9,12 @@ function App() {
         <ul className="space-y-2 text-sm">
           <li>
             <a href="#philosophy" className="hover:text-purple-600">
-              💡 철학
+              철학
             </a>
           </li>
           <li>
             <a href="#about" className="hover:text-purple-600">
-              🌟 소개
+              소개
             </a>
           </li>
           <li>
@@ -37,14 +37,20 @@ function App() {
 
       {/* 메인 콘텐츠 */}
       <main className="ml-0 md:ml-52 max-w-4xl px-4">
-        <header className="mb-12 text-left">
+        {/* 상단 프로필 */}
+        <header className="mb-12 text-center">
+          <img
+            src="/images/profile.png"
+            alt="Profile"
+            className="w-28 h-28 rounded-full mx-auto mb-4 border-4 border-white dark:border-gray-700 shadow"
+          />
           <h1 className="text-3xl font-bold mb-2">👨‍💻 Louis | Game & Web Developer</h1>
           <p className="text-sm text-gray-500 dark:text-gray-400">Unity · C# · React · Spring Boot · Git</p>
         </header>
 
         {/* 개발 철학 */}
         <section id="philosophy" className="mb-16 text-left">
-          <h2 className="text-xl font-semibold mb-2">💡 개발 철학</h2>
+          <h2 className="text-xl font-semibold mb-2 text-center">💡 개발 철학</h2>
           <blockquote className="text-gray-300 italic pl-4">
             “좋은 게임은 감정을 전달한다.” <br />
             사용자가 따뜻한 경험을 할 수 있도록,
@@ -55,7 +61,7 @@ function App() {
 
         {/* 소개 */}
         <section id="about" className="mb-16 text-left">
-          <h2 className="text-xl font-semibold mb-2">🌟 소개</h2>
+          <h2 className="text-xl font-semibold mb-2 text-center">🌟 소개</h2>
           <ul className="list-none pl-0 text-gray-300 space-y-1">
             <li>🎮 게임과 상상력을 좋아하는 개발자입니다</li>
             <li>🌍 글로벌 출시를 목표로 캐주얼 게임을 개발하고 있습니다</li>
@@ -101,7 +107,7 @@ function App() {
 
         {/* 프로젝트 */}
         <section id="projects" className="mb-16 text-left">
-          <h2 className="text-xl font-semibold mb-6">📁 프로젝트</h2>
+          <h2 className="text-xl font-semibold mb-6 text-center">📁 프로젝트</h2>
           <div className="grid gap-6 md:grid-cols-2">
             <div className="bg-neutral-800 rounded-xl p-5 shadow hover:shadow-lg transition">
               <h3 className="text-lg font-bold text-purple-400 mb-2">WarmFriends</h3>
@@ -130,7 +136,7 @@ function App() {
 
         {/* GitHub 활동 */}
         <section id="github" className="mb-20 text-left">
-          <h2 className="text-xl font-semibold mb-4">📊 GitHub 활동</h2>
+          <h2 className="text-xl font-semibold mb-4 text-center">📊 GitHub 활동</h2>
           <div className="flex flex-col md:flex-row md:space-x-4">
             <img
               src="https://github-readme-stats.vercel.app/api?username=louis-ys&show_icons=true&theme=tokyonight&hide_border=true"
