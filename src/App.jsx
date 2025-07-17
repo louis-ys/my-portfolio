@@ -9,11 +9,13 @@ function App() {
         <ul className="space-y-2 text-sm">
           <li>
             <a href="#philosophy" className="hover:text-purple-600">
+              {" "}
               철학
             </a>
           </li>
           <li>
             <a href="#about" className="hover:text-purple-600">
+              {" "}
               소개
             </a>
           </li>
@@ -44,13 +46,13 @@ function App() {
             alt="Profile"
             className="w-28 h-28 rounded-full mx-auto mb-4 border-4 border-white dark:border-gray-700 shadow"
           />
-          <h1 className="text-3xl font-bold mb-2">👨‍💻 Louis | Game & Web Developer</h1>
+          <h1 className="text-3xl font-bold mb-2">👨 Louis | Game & Web Developer</h1>
           <p className="text-sm text-gray-500 dark:text-gray-400">Unity · C# · React · Spring Boot · Git</p>
         </header>
 
         {/* 개발 철학 */}
         <section id="philosophy" className="mb-16 text-left">
-          <h2 className="text-xl font-semibold mb-2 text-center">💡 개발 철학</h2>
+          <h2 className="text-xl font-semibold mb-2 text-center"> 개발 철학</h2>
           <blockquote className="text-gray-300 italic pl-4">
             “좋은 게임은 감정을 전달한다.” <br />
             사용자가 따뜻한 경험을 할 수 있도록,
@@ -61,7 +63,7 @@ function App() {
 
         {/* 소개 */}
         <section id="about" className="mb-16 text-left">
-          <h2 className="text-xl font-semibold mb-2 text-center">🌟 소개</h2>
+          <h2 className="text-xl font-semibold mb-2 text-center"> 소개</h2>
           <ul className="list-none pl-0 text-gray-300 space-y-1">
             <li>🎮 게임과 상상력을 좋아하는 개발자입니다</li>
             <li>🌍 글로벌 출시를 목표로 캐주얼 게임을 개발하고 있습니다</li>
